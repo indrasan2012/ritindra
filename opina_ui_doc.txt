@@ -1,0 +1,20 @@
+src - this folder is having 3 folder(app, assets, environments) and  5 files.
+	app - this folder having 6 folders(authenticate, auth-guard, block modules, core modules, feature modules, interceptor) and 6 files
+		authenticate - this folder having 5 component(forgot-password screen, login screen, registration screen, register confirm screen, reset password screen) and 1 service. 
+		auth-guard - it is having the security guard code to the application, if user is not having the authenticated token it will not allow the user to access any page.
+		block modules - Here we have 4 common used component/screen section (header, loader when api call, topbar and sidebar).
+		core modules - Here we have common import modules, modals for type define, service for all api and common method call.
+		feature module - In this module we have Dashboard component for the Dashboard screen, Development folder, Resources folder, Simulations folder, User-configuration folder and main module, routing module, and trim space custom directive.
+			main module is having all above component import data, and routing module is having the routing path to navigate all and to implement lazy loading, in text field to trim unused space trim space custom directive has been created.
+			Development folder is having components or screens for add/edit experiment, add/edit av stack, add/edit use case, view of scenario, experiment, av stack etc.
+			Resources is having 2 component resiprocity and resource.
+			Simulations is having 3 component related to simulations.
+			Inside user-configuration we have add/edit user and list of user component/page.
+		Interceptor - In this folder we kept our token verification method, error capture method and loader method so for each api call these interceptor can execute continuously.
+		App related files are the main entry point to the application.
+
+	Assets - This is having the image section where we have all the images which is used in the all over the application.
+	Environments - Here we have the path decleration of web api for  both development and deployment.
+
+outside of the src we have multiple file where package.json, package-lock.json. angular.json. tsinit.json, tsconfig, and others are the necessary files
+
